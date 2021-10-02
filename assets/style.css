@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
 }
 
+/* Header section */
 .header-section {
     padding: 15px 0;
 }
@@ -74,9 +75,16 @@ body {
     flex-grow: 1;
     align-items: center;
     list-style: none;
-    padding-left: 18%;
     justify-content: space-around;
 }
+
+.mx-auto {
+    padding-left: 18%;
+    padding: 0 90px;
+    margin: 0 0 0 100px;
+}
+
+
 .navbar ul {
     margin-top: 0px;
 }
@@ -185,7 +193,7 @@ body {
     text-decoration: none;
 }
 
-.offer {
+.offer-section {
     padding-top: 45px;
     padding-bottom: 90px;
 }
@@ -264,6 +272,8 @@ body {
 .card-box .detail-box a:hover {
     background-color: #d4950b;
 }
+
+/* Food section */ 
 
 .food-section {
     display: flex;
@@ -367,6 +377,7 @@ body {
     line-height: 1.2;
 }
 
+
 .food-section .options a {
     display: flex;
     justify-content: center;
@@ -453,6 +464,7 @@ body {
     text-decoration: none;
 }
 
+/* Book section */
 .book-section {
     padding: 100px 0;
 }
@@ -533,6 +545,7 @@ body {
     opacity: 1;
 }
 
+/* Footer section */
 .footer-section {
     background-color: #222831;
     color: #ffffff;
@@ -611,3 +624,78 @@ body {
     margin: 25px 0;
 }
 
+/* Responsive for website */
+
+@media screen and (max-width: 400px) {
+    .card-box .detail-box a {
+        font-size: 13px;
+    }
+
+    .card-box .detail-box ion-icon {
+        width: 15px;
+        height: 15px;
+    }
+    
+}
+
+@media screen and (max-width:930px){
+    .navbar {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+
+    .menu-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .offer-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-section .img-box img {
+        max-width: 465px;
+    }
+
+    .about-res {
+        margin-bottom: 90px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .book-section .container {
+        padding: 20px;
+    }
+
+    .form-ms{
+        padding-bottom: 40px;
+    }
+    .contact-us {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .menu-card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .offer-section .container {
+        padding:0;
+    }
+    .food-section .filters {
+        flex-wrap: nowrap;
+    }
+
+}
